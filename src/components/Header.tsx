@@ -1,8 +1,16 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleDownloadSource = () => {
+    // GitHub APIを使用してリポジトリをZIPとしてダウンロード
+    const link = document.createElement('a');
+    link.href = 'https://github.com/yourusername/your-repo/archive/refs/heads/main.zip';
+    link.download = 'electrical-inspection-program.zip';
+    link.click();
+  };
 
   return (
     <header className="bg-white shadow-sm fixed w-full top-0 z-50">
@@ -17,6 +25,13 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-gray-700 hover:text-primary">サービス</a>
             <a href="#about" className="text-gray-700 hover:text-primary">会社概要</a>
+            <button
+              onClick={handleDownloadSource}
+              className="flex items-center gap-2 text-gray-700 hover:text-primary"
+            >
+              <Download className="w-4 h-4" />
+              ソースコード
+            </button>
             <a href="#contact" className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90">
               お問い合わせ
             </a>
@@ -46,6 +61,16 @@ const Header = () => {
               >
                 会社概要
               </a>
+              <button
+                onClick={() => {
+                  handleDownloadSource();
+                  setIsOpen(false);
+                }}
+                className="flex items-center gap-2 w-full px-3 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                <Download className="w-4 h-4" />
+                ソースコード
+              </button>
               <a
                 href="#contact"
                 className="block px-3 py-2 text-primary hover:bg-gray-50"
