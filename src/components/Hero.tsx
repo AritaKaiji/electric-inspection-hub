@@ -58,24 +58,16 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-black/30 backdrop-blur-md p-6 rounded-xl mb-12 inline-block"
-          >
-            <p className="flex items-center text-xl">
-              <CheckCircle2 className="w-8 h-8 mr-3 text-yellow-400" />
-              年間10,000件以上の点検実績
-            </p>
-          </motion.div>
-          
-          <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            className="mt-8" // Added margin top for more spacing
           >
             <a
               href="#contact"
-              className="inline-block bg-yellow-400 text-black px-12 py-4 rounded-full text-lg font-bold hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-yellow-400/20"
+              className="inline-block bg-yellow-400 text-black px-16 py-5 text-2xl font-bold rounded-full 
+                         hover:bg-yellow-500 transition-colors shadow-xl hover:shadow-yellow-400/30 
+                         transform hover:-translate-y-1 active:translate-y-0 
+                         focus:outline-none focus:ring-4 focus:ring-yellow-300"
             >
               無料相談はこちら
             </a>
