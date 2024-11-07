@@ -1,4 +1,4 @@
-import { Shield, Zap, Clock, CheckCircle2 } from "lucide-react";
+import { Shield, Zap, Clock, CheckCircle2, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 
@@ -25,6 +25,19 @@ const Hero = () => {
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20">
+        {/* 24時間対応バッジを追加 */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="absolute top-0 right-4 sm:right-6 lg:right-8"
+        >
+          <div className="bg-yellow-400 text-black px-4 py-2 rounded-full flex items-center gap-2 shadow-lg animate-pulse">
+            <Phone className="w-5 h-5" />
+            <span className="font-bold">24時間対応</span>
+          </div>
+        </motion.div>
+
         <div className="text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
