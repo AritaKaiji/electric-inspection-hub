@@ -1,5 +1,6 @@
 import { Shield, Zap, Clock, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
+import ProcessDiagram from "./ProcessDiagram";
 
 const Hero = () => {
   return (
@@ -97,6 +98,8 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
+
+      <ProcessDiagram />
     </div>
   );
 };
