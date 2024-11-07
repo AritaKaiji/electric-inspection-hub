@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div 
-      className="relative bg-gradient-to-br from-primary to-secondary pt-24 pb-16 text-white"
+      className="relative bg-gradient-to-br from-black to-primary/90 pt-24 pb-16 text-white"
       style={{
-        backgroundImage: `linear-gradient(to bottom right, rgba(59, 130, 246, 0.9), rgba(37, 99, 235, 0.9)), url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952')`,
+        backgroundImage: `linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(255, 193, 7, 0.8)), url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
