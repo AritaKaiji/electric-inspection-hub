@@ -3,18 +3,27 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div 
-      className="relative bg-gradient-to-br from-primary to-secondary min-h-screen pt-32 pb-16 text-foreground overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(26, 26, 26, 0.95)), url('https://images.unsplash.com/photo-1581092226825-a6a2a5aee158')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    <div className="relative min-h-screen pt-32 pb-16 text-foreground overflow-hidden">
+      {/* Hero Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1581092226825-a6a2a5aee158?auto=format&fit=crop&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      />
       
-      <div className="container-width px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Gradient Overlay */}
+      <div 
+        className="absolute inset-0 z-10"
+        style={{
+          background: 'linear-gradient(to bottom right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8))'
+        }}
+      />
+
+      <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +47,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-white/10 backdrop-blur-md p-6 rounded-xl mb-12 inline-block"
+            className="bg-black/30 backdrop-blur-md p-6 rounded-xl mb-12 inline-block"
           >
             <p className="flex items-center text-xl">
               <CheckCircle2 className="w-8 h-8 mr-3 text-yellow-400" />
@@ -65,21 +74,21 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <div className="bg-black/40 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
+          <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
             <Shield className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2">徹底した安全管理</h3>
             <p className="text-gray-300">
               法令基準に基づく確実な点検で、事故を未然に防ぎます
             </p>
           </div>
-          <div className="bg-black/40 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
+          <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
             <Zap className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2">国家資格保有者が対応</h3>
             <p className="text-gray-300">
               電気主任技術者をはじめとする有資格者が責任を持って点検します
             </p>
           </div>
-          <div className="bg-black/40 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
+          <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
             <Clock className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2">24時間緊急対応</h3>
             <p className="text-gray-300">
