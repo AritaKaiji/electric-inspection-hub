@@ -2,7 +2,14 @@ import { Shield, Zap, Clock } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-br from-primary to-secondary pt-24 pb-16 text-white">
+    <div 
+      className="relative bg-gradient-to-br from-primary to-secondary pt-24 pb-16 text-white"
+      style={{
+        backgroundImage: `linear-gradient(to bottom right, rgba(59, 130, 246, 0.9), rgba(37, 99, 235, 0.9)), url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="container-width px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
