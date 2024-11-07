@@ -1,8 +1,19 @@
-import { Shield, Zap, Clock, CheckCircle2, Phone } from "lucide-react";
+import { Shield, Zap, Clock, CheckCircle2, Phone, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
+import { toast } from "sonner";
 
 const Hero = () => {
+  const handleDownload = () => {
+    // サンプルPDFのダウンロード
+    const link = document.createElement('a');
+    link.href = '/inspection-guide.pdf';  // このPDFは public フォルダに配置する必要があります
+    link.download = '電気設備点検ガイド.pdf';
+    link.click();
+    
+    toast.success("ダウンロードを開始しました");
+  };
+
   return (
     <div className="relative min-h-screen pt-32 pb-16 text-foreground overflow-hidden">
       {/* Hero Image */}
@@ -58,19 +69,35 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-8" // Added margin top for more spacing
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <a
+            <motion.a
               href="#contact"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               className="inline-block bg-yellow-400 text-black px-16 py-5 text-2xl font-bold rounded-full 
-                         hover:bg-yellow-500 transition-colors shadow-xl hover:shadow-yellow-400/30 
-                         transform hover:-translate-y-1 active:translate-y-0 
-                         focus:outline-none focus:ring-4 focus:ring-yellow-300"
+                       hover:bg-yellow-500 transition-colors shadow-xl hover:shadow-yellow-400/30 
+                       transform hover:-translate-y-1 active:translate-y-0 
+                       focus:outline-none focus:ring-4 focus:ring-yellow-300"
             >
               無料相談はこちら
-            </a>
+            </motion.a>
+
+            <motion.button
+              onClick={handleDownload}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-yellow-400 px-8 py-5 text-xl font-bold rounded-full 
+                       hover:bg-white/20 transition-colors shadow-xl
+                       transform hover:-translate-y-1 active:translate-y-0 
+                       focus:outline-none focus:ring-4 focus:ring-yellow-300/50"
+            >
+              <Download className="w-6 h-6" />
+              資料ダウンロード
+            </motion.button>
           </motion.div>
         </div>
 
