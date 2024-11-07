@@ -25,12 +25,12 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#FFC107", // 黄色
-          foreground: "#000000", // 黒
+          DEFAULT: "#000000", // 黒
+          foreground: "#FFC107", // 黄色
         },
         secondary: {
-          DEFAULT: "#FFD54F", // 明るい黄色
-          foreground: "#000000", // 黒
+          DEFAULT: "#1A1A1A", // 暗い黒
+          foreground: "#FFD54F", // 明るい黄色
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
