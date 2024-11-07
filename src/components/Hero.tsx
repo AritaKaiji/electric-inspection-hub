@@ -1,4 +1,5 @@
 import { Shield, Zap, Clock } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -12,20 +13,34 @@ const Hero = () => {
     >
       <div className="container-width px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+          <motion.h1 
+            className="text-4xl sm:text-5xl font-bold mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             安全な電気設備で、安心な暮らしを
-          </h1>
-          <p className="text-lg sm:text-xl mb-12 text-gray-100">
+          </motion.h1>
+          <motion.p 
+            className="text-lg sm:text-xl mb-12 text-gray-100"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             プロフェッショナルな電気点検サービスで、
             <br className="hidden sm:block" />
             あなたの大切な設備を守ります
-          </p>
-          <a
+          </motion.p>
+          <motion.a
             href="#contact"
             className="inline-block bg-white text-primary px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            whileHover={{ scale: 1.05 }}
           >
             無料相談はこちら
-          </a>
+          </motion.a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
