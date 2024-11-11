@@ -51,10 +51,10 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <h1 className="text-4xl sm:text-6xl font-bold mb-6 leading-tight text-gray-900">
-              <span className="block mb-2">笑顔が見える</span>
-              <span className="block">現場づくり</span>
-              <span className="block">安全第一。</span>
+            <h1 className="inline-flex flex-col writing-vertical-rl text-4xl sm:text-6xl font-bold mb-6 leading-tight text-gray-900 mx-auto">
+              <span className="mb-2">笑顔が見える</span>
+              <span className="mb-2">現場づくり</span>
+              <span>安全第一。</span>
             </h1>
             <p className="text-xl sm:text-2xl mb-12 text-gray-600">
               熟練の技術者による確実な施工で、

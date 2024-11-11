@@ -41,3 +41,8 @@
 .container-width {
   @apply max-w-7xl mx-auto;
 }
+
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
