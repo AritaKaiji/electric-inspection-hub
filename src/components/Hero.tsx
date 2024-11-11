@@ -19,16 +19,16 @@ const Hero = () => {
       <div 
         className="fixed inset-0 w-full h-full z-0" 
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
         }}
       />
       
-      {/* Gradient Overlay - Darker overlay for nighttime visibility */}
+      {/* Gradient Overlay */}
       <div 
-        className="fixed inset-0 z-10 bg-gradient-to-b from-black/60 via-black/50 to-black/60"
+        className="fixed inset-0 z-10 bg-gradient-to-b from-black/30 via-black/20 to-black/30"
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20 pt-32 pb-16">
