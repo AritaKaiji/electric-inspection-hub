@@ -5,9 +5,8 @@ import { toast } from "sonner";
 
 const Hero = () => {
   const handleDownload = () => {
-    // サンプルPDFのダウンロード
     const link = document.createElement('a');
-    link.href = '/inspection-guide.pdf';  // このPDFは public フォルダに配置する必要があります
+    link.href = '/inspection-guide.pdf';
     link.download = '電気設備点検ガイド.pdf';
     link.click();
     
@@ -20,7 +19,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -29,14 +28,10 @@ const Hero = () => {
       
       {/* Gradient Overlay */}
       <div 
-        className="absolute inset-0 z-10"
-        style={{
-          background: 'linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4))'
-        }}
+        className="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-black/60 to-black/80"
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20">
-        {/* 24時間対応バッジを大きく、より目立つように修正 */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +40,7 @@ const Hero = () => {
         >
           <div className="bg-yellow-400 text-black px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold">
             <Phone className="w-7 h-7" />
-            <span>24時間対応</span>
+            <span>24時間緊急対応</span>
           </div>
         </motion.div>
 
@@ -56,10 +51,10 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <h1 className="text-5xl sm:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
-              安全第一の
-              <br />
-              電気設備点検
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
+              <span className="block text-yellow-400 mb-2">安全を第一に。</span>
+              <span className="block">笑顔が見える</span>
+              <span className="block">電気設備点検。</span>
             </h1>
             <p className="text-xl sm:text-2xl mb-12 text-gray-300">
               国家資格保有者による確実な点検で、
