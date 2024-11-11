@@ -19,7 +19,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -52,14 +52,14 @@ const Hero = () => {
             className="mb-8"
           >
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
-              <span className="block text-yellow-400 mb-2">安全を第一に。</span>
-              <span className="block">笑顔が見える</span>
-              <span className="block">電気設備点検。</span>
+              <span className="block text-yellow-400 mb-2">笑顔が見える</span>
+              <span className="block">現場づくり</span>
+              <span className="block">安全第一。</span>
             </h1>
             <p className="text-xl sm:text-2xl mb-12 text-gray-300">
-              国家資格保有者による確実な点検で、
+              熟練の技術者による確実な施工で、
               <br className="hidden sm:block" />
-              事故を未然に防ぎ、安心をお届けします
+              安心と信頼をお届けします
             </p>
           </motion.div>
 
@@ -106,21 +106,21 @@ const Hero = () => {
             <Shield className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2">徹底した安全管理</h3>
             <p className="text-gray-300">
-              法令基準に基づく確実な点検で、事故を未然に防ぎます
+              現場での安全を最優先に、確実な施工を行います
             </p>
           </div>
           <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
             <Zap className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
-            <h3 className="text-xl font-bold mb-2">国家資格保有者が対応</h3>
+            <h3 className="text-xl font-bold mb-2">熟練の技術者が対応</h3>
             <p className="text-gray-300">
-              電気主任技術者をはじめとする有資格者が責任を持って点検します
+              豊富な経験を持つ技術者が丁寧に施工します
             </p>
           </div>
           <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
             <Clock className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
-            <h3 className="text-xl font-bold mb-2">24時間緊急対応</h3>
+            <h3 className="text-xl font-bold mb-2">迅速な対応</h3>
             <p className="text-gray-300">
-              突発的なトラブルにも迅速に対応し、安全を確保します
+              お客様のご要望に素早く対応いたします
             </p>
           </div>
         </motion.div>
