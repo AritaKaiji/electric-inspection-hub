@@ -26,9 +26,9 @@ const Hero = () => {
         }}
       />
       
-      {/* Gradient Overlay - Adjusted for nighttime visibility */}
+      {/* Gradient Overlay - Adjusted for better text readability */}
       <div 
-        className="fixed inset-0 z-10 bg-gradient-to-b from-black/60 via-black/50 to-black/60"
+        className="fixed inset-0 z-10 bg-gradient-to-b from-black/75 via-black/65 to-black/75"
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20 pt-32 pb-16">
@@ -38,7 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="absolute top-0 right-4 sm:right-6 lg:right-8"
         >
-          <div className="bg-white text-gray-900 px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold border border-gray-200">
+          <div className="bg-white/90 backdrop-blur-sm text-gray-900 px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold">
             <Phone className="w-7 h-7" />
             <span>24時間緊急対応</span>
           </div>
@@ -51,12 +51,12 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <h1 className="inline-flex flex-col writing-vertical-rl text-4xl sm:text-6xl font-bold mb-6 leading-tight text-gray-900 mx-auto">
+            <h1 className="inline-flex flex-col writing-vertical-rl text-4xl sm:text-6xl font-bold mb-6 leading-tight text-white mx-auto drop-shadow-lg">
               <span className="mb-2">笑顔が見える</span>
               <span className="mb-2">現場づくり</span>
               <span>安全第一。</span>
             </h1>
-            <p className="text-xl sm:text-2xl mb-12 text-gray-600">
+            <p className="text-xl sm:text-2xl mb-12 text-gray-100 drop-shadow-md">
               熟練の技術者による確実な施工で、
               <br className="hidden sm:block" />
               安心と信頼をお届けします
@@ -102,24 +102,24 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl border border-gray-200/20 hover:border-gray-300/40 transition-colors group">
             <Shield className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-gray-900">徹底した安全管理</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-800">
               現場での安全を最優先に、確実な施工を行います
             </p>
           </div>
-          <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl border border-gray-200/20 hover:border-gray-300/40 transition-colors group">
             <Zap className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-gray-900">熟練の技術者が対応</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-800">
               豊富な経験を持つ技術者が丁寧に施工します
             </p>
           </div>
-          <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl border border-gray-200/20 hover:border-gray-300/40 transition-colors group">
             <Clock className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-gray-900">迅速な対応</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-800">
               お客様のご要望に素早く対応いたします
             </p>
           </div>
