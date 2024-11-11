@@ -15,34 +15,18 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen text-foreground">
-      {/* Hero Image with Glow Effect */}
-      <div className="fixed inset-0 w-full h-full z-0">
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            filter: 'brightness(1.2) contrast(1.1)',
-          }}
-        />
-        {/* Additional Glow Layer */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            filter: 'blur(8px) brightness(1.5)',
-            opacity: 0.4,
-            mixBlendMode: 'screen',
-          }}
-        />
-      </div>
+      {/* Hero Image */}
+      <div 
+        className="fixed inset-0 w-full h-full z-0" 
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      />
       
-      {/* Gradient Overlay */}
+      {/* Gradient Overlay - Adjusted for better text readability */}
       <div 
         className="fixed inset-0 z-10 bg-gradient-to-b from-black/75 via-black/65 to-black/75"
       />
@@ -54,7 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="absolute top-0 right-4 sm:right-6 lg:right-8"
         >
-          <div className="bg-white text-gray-900 px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold">
+          <div className="bg-white/90 backdrop-blur-sm text-gray-900 px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold">
             <Phone className="w-7 h-7" />
             <span>24時間緊急対応</span>
           </div>
@@ -110,7 +94,6 @@ const Hero = () => {
               資料ダウンロード
             </motion.button>
           </motion.div>
-
         </div>
 
         <motion.div 
@@ -119,21 +102,21 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl border border-gray-200/20 hover:border-gray-300/40 transition-colors group">
             <Shield className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-gray-900">徹底した安全管理</h3>
             <p className="text-gray-800">
               現場での安全を最優先に、確実な施工を行います
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl border border-gray-200/20 hover:border-gray-300/40 transition-colors group">
             <Zap className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-gray-900">熟練の技術者が対応</h3>
             <p className="text-gray-800">
               豊富な経験を持つ技術者が丁寧に施工します
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl border border-gray-200/20 hover:border-gray-300/40 transition-colors group">
             <Clock className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-gray-900">迅速な対応</h3>
             <p className="text-gray-800">
