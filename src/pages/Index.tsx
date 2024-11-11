@@ -4,12 +4,14 @@ import Services from "../components/Services";
 import About from "../components/About";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import TabsContainer from "../components/TabsContent";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <TabsContainer />
       <Services />
       <About />
       <ContactForm />
