@@ -47,7 +47,7 @@ const Services = () => {
         "接地抵抗測定による感電防止",
         "設備の経年劣化チェック"
       ],
-      bgImage: "https://images.unsplash.com/photo-1518770660439-4636190af475"
+      bgImage: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
     },
     {
       icon: AlertCircle,
@@ -59,7 +59,7 @@ const Services = () => {
         "設備故障の緊急修理",
         "安全な仮復旧措置"
       ],
-      bgImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+      bgImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
     },
     {
       icon: FileText,
