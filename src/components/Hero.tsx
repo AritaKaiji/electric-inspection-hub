@@ -19,7 +19,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -28,7 +28,7 @@ const Hero = () => {
       
       {/* Gradient Overlay */}
       <div 
-        className="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-black/60 to-black/80"
+        className="absolute inset-0 z-10 bg-gradient-to-b from-white/90 via-white/80 to-white/90"
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20">
@@ -38,7 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="absolute top-0 right-4 sm:right-6 lg:right-8"
         >
-          <div className="bg-yellow-400 text-black px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold">
+          <div className="bg-white text-gray-900 px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold border border-gray-200">
             <Phone className="w-7 h-7" />
             <span>24時間緊急対応</span>
           </div>
@@ -51,12 +51,12 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <h1 className="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
-              <span className="block text-yellow-400 mb-2">笑顔が見える</span>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6 leading-tight text-gray-900">
+              <span className="block mb-2">笑顔が見える</span>
               <span className="block">現場づくり</span>
               <span className="block">安全第一。</span>
             </h1>
-            <p className="text-xl sm:text-2xl mb-12 text-gray-300">
+            <p className="text-xl sm:text-2xl mb-12 text-gray-600">
               熟練の技術者による確実な施工で、
               <br className="hidden sm:block" />
               安心と信頼をお届けします
@@ -73,10 +73,10 @@ const Hero = () => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block bg-yellow-400 text-black px-16 py-5 text-2xl font-bold rounded-full 
-                       hover:bg-yellow-500 transition-colors shadow-xl hover:shadow-yellow-400/30 
+              className="inline-block bg-white text-gray-900 px-16 py-5 text-2xl font-bold rounded-full 
+                       hover:bg-gray-50 transition-colors shadow-xl hover:shadow-gray-200/30 
                        transform hover:-translate-y-1 active:translate-y-0 
-                       focus:outline-none focus:ring-4 focus:ring-yellow-300"
+                       focus:outline-none focus:ring-4 focus:ring-gray-200 border border-gray-200"
             >
               無料相談はこちら
             </motion.a>
@@ -85,10 +85,10 @@ const Hero = () => {
               onClick={handleDownload}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-yellow-400 px-8 py-5 text-xl font-bold rounded-full 
-                       hover:bg-white/20 transition-colors shadow-xl
+              className="inline-flex items-center gap-2 bg-gray-50 text-gray-900 px-8 py-5 text-xl font-bold rounded-full 
+                       hover:bg-gray-100 transition-colors shadow-xl border border-gray-200
                        transform hover:-translate-y-1 active:translate-y-0 
-                       focus:outline-none focus:ring-4 focus:ring-yellow-300/50"
+                       focus:outline-none focus:ring-4 focus:ring-gray-200"
             >
               <Download className="w-6 h-6" />
               資料ダウンロード
@@ -102,24 +102,24 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
-            <Shield className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
-            <h3 className="text-xl font-bold mb-2">徹底した安全管理</h3>
-            <p className="text-gray-300">
+          <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+            <Shield className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
+            <h3 className="text-xl font-bold mb-2 text-gray-900">徹底した安全管理</h3>
+            <p className="text-gray-600">
               現場での安全を最優先に、確実な施工を行います
             </p>
           </div>
-          <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
-            <Zap className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
-            <h3 className="text-xl font-bold mb-2">熟練の技術者が対応</h3>
-            <p className="text-gray-300">
+          <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+            <Zap className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
+            <h3 className="text-xl font-bold mb-2 text-gray-900">熟練の技術者が対応</h3>
+            <p className="text-gray-600">
               豊富な経験を持つ技術者が丁寧に施工します
             </p>
           </div>
-          <div className="bg-black/30 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-yellow-400/50 transition-colors group">
-            <Clock className="w-12 h-12 mb-4 text-yellow-400 group-hover:scale-110 transition-transform" />
-            <h3 className="text-xl font-bold mb-2">迅速な対応</h3>
-            <p className="text-gray-300">
+          <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors group">
+            <Clock className="w-12 h-12 mb-4 text-gray-900 group-hover:scale-110 transition-transform" />
+            <h3 className="text-xl font-bold mb-2 text-gray-900">迅速な対応</h3>
+            <p className="text-gray-600">
               お客様のご要望に素早く対応いたします
             </p>
           </div>
