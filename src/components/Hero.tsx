@@ -15,18 +15,34 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen text-foreground">
-      {/* Hero Image */}
-      <div 
-        className="fixed inset-0 w-full h-full z-0" 
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
-      />
+      {/* Hero Image with Glow Effect */}
+      <div className="fixed inset-0 w-full h-full z-0">
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            filter: 'brightness(1.2) contrast(1.1)',
+          }}
+        />
+        {/* Additional Glow Layer */}
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            filter: 'blur(8px) brightness(1.5)',
+            opacity: 0.4,
+            mixBlendMode: 'screen',
+          }}
+        />
+      </div>
       
-      {/* Gradient Overlay - Adjusted for better text readability */}
+      {/* Gradient Overlay */}
       <div 
         className="fixed inset-0 z-10 bg-gradient-to-b from-black/75 via-black/65 to-black/75"
       />
