@@ -73,7 +73,7 @@ const About = () => {
             <img
               src="https://images.unsplash.com/photo-1518770660439-4636190af475"
               alt="電気設備の写真"
-              className="absolute inset-0 w-full h-full object-cover opacity-15" // 透過率を15%に設定
+              className="absolute inset-0 w-full h-full object-cover opacity-85" // 透過率を85%に設定
             />
           </motion.div>
         </div>
