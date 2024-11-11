@@ -17,7 +17,7 @@ const Hero = () => {
     <div className="relative min-h-screen pt-32 pb-16 text-foreground overflow-hidden">
       {/* Hero Image */}
       <div 
-        className="absolute inset-0 z-0 opacity-0" // 透過率を0%に設定
+        className="absolute inset-0 z-0 opacity-15" // 透過率を15%に設定
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')`,
           backgroundSize: 'cover',
@@ -28,7 +28,7 @@ const Hero = () => {
       
       {/* Gradient Overlay */}
       <div 
-        className="absolute inset-0 z-10 bg-gradient-to-b from-white/0 via-white/0 to-white/0" // グラデーションの透過率を0%に設定
+        className="absolute inset-0 z-10 bg-gradient-to-b from-white/15 via-white/15 to-white/15" // グラデーションの透過率を15%に設定
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20">
