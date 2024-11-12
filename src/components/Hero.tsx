@@ -2,7 +2,6 @@ import { Shield, Zap, Clock, CheckCircle2, Phone, Download } from "lucide-react"
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 import { toast } from "sonner";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -11,11 +10,8 @@ const Hero = () => {
   const images = [
     // Current image
     'https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
-    // Sustainability focused images
-    'https://images.unsplash.com/photo-1506744038136-46273834b3fb', // Water surrounded by trees
-    'https://images.unsplash.com/photo-1518495973542-4542c06a5843', // Sunlight through trees
-    'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843', // Forest with sunbeam
-    'https://images.unsplash.com/photo-1501854140801-50d01698950b', // Green mountains aerial view
+    // Sustainability focused image with prominent green
+    'https://images.unsplash.com/photo-1518495973542-4542c06a5843', // Sunlight through green trees
   ];
 
   useEffect(() => {
@@ -26,6 +22,7 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // ... keep existing code (handleDownload function and rest of the component)
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/inspection-guide.pdf';
@@ -56,7 +53,6 @@ const Hero = () => {
         ))}
       </div>
       
-      {/* Light Glow Effect */}
       <div 
         className="fixed inset-0 z-5"
         style={{
@@ -166,6 +162,7 @@ const Hero = () => {
       </div>
 
       <ProcessDiagram />
+      {/* Light Glow Effect, Gradient Overlay, Content, etc. */}
     </div>
   );
 };
