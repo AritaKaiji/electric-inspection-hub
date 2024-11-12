@@ -1,11 +1,17 @@
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+
+const openai = API_KEY ? new OpenAI({
+  apiKey: API_KEY,
   dangerouslyAllowBrowser: true
-});
+}) : null;
 
 export const getAIResponse = async (message: string) => {
+  if (!openai) {
+    return "申し訳ありません。AIチャットは現在設定されていません。管理者にお問い合わせください。";
+  }
+
   try {
     const completion = await openai.chat.completions.create({
       messages: [
@@ -18,7 +24,7 @@ export const getAIResponse = async (message: string) => {
           content: message
         }
       ],
-      model: "gpt-4o",
+      model: "gpt-4",
     });
 
     return completion.choices[0]?.message?.content || "申し訳ありません。現在応答できません。";
