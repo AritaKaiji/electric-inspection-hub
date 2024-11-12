@@ -1,5 +1,4 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CaseStudiesTab } from "./cases/CaseStudiesTab";
 import { CompanyTab } from "./tabs/CompanyTab";
 import { ServicesTab } from "./tabs/ServicesTab";
@@ -9,11 +8,12 @@ import { SustainabilityTab } from "./tabs/SustainabilityTab";
 const TabsContainer = () => {
   return (
     <Tabs defaultValue="company" className="w-full max-w-5xl mx-auto mt-8">
-      <TabsList className="grid w-full grid-cols-4">
+      <TabsList className="grid w-full grid-cols-5">
         <TabsTrigger value="company">会社情報</TabsTrigger>
         <TabsTrigger value="services">サービス</TabsTrigger>
         <TabsTrigger value="achievements">実績</TabsTrigger>
         <TabsTrigger value="sustainability">サステナビリティ</TabsTrigger>
+        <TabsTrigger value="case-studies">導入事例</TabsTrigger>
       </TabsList>
       <TabsContent value="company">
         <CompanyTab />

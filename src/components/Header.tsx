@@ -11,6 +11,17 @@ const Header = () => {
     link.click();
   };
 
+  const scrollToTabsAndSelectCaseStudies = () => {
+    const tabsElement = document.querySelector('[role="tablist"]');
+    if (tabsElement) {
+      tabsElement.scrollIntoView({ behavior: 'smooth' });
+      const caseStudiesTab = document.querySelector('[value="case-studies"]') as HTMLButtonElement;
+      if (caseStudiesTab) {
+        caseStudiesTab.click();
+      }
+    }
+  };
+
   return (
     <header className="bg-transparent backdrop-blur-sm fixed w-full top-0 z-50 transition-colors hover:bg-white/10">
       <nav className="container-width px-4 sm:px-6 lg:px-8">
@@ -23,7 +34,12 @@ const Header = () => {
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-white hover:text-white/80 transition-colors">サービス</a>
-            <a href="#case-studies" className="text-white hover:text-white/80 transition-colors">導入事例</a>
+            <button 
+              onClick={scrollToTabsAndSelectCaseStudies}
+              className="text-white hover:text-white/80 transition-colors"
+            >
+              導入事例
+            </button>
             <a href="#about" className="text-white hover:text-white/80 transition-colors">会社概要</a>
             <button
               onClick={handleDownloadSource}
@@ -54,13 +70,15 @@ const Header = () => {
               >
                 サービス
               </a>
-              <a
-                href="#case-studies"
-                className="block px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md"
-                onClick={() => setIsOpen(false)}
+              <button
+                className="block w-full text-left px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md"
+                onClick={() => {
+                  scrollToTabsAndSelectCaseStudies();
+                  setIsOpen(false);
+                }}
               >
                 導入事例
-              </a>
+              </button>
               <a
                 href="#about"
                 className="block px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md"
