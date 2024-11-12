@@ -8,18 +8,18 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const images = [
-    // 日本人男性による電気点検の画像
-    'https://images.unsplash.com/photo-1527576539890-dfa815648363',
-    // サステナビリティに焦点を当てた画像（緑が目立つ）
+    // Current image
+    'https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
+    // Sustainability focused image with prominent green
     'https://images.unsplash.com/photo-1518495973542-4542c06a5843',
-    // 電気設備点検の画像
+    // Electrical inspection image
     'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80'
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
-    }, 10000); // 10秒
+    }, 10000); // 10 seconds
 
     return () => clearInterval(timer);
   }, []);
