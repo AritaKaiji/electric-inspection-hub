@@ -2,8 +2,30 @@ import { Shield, Zap, Clock, CheckCircle2, Phone, Download } from "lucide-react"
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 import { toast } from "sonner";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const images = [
+    // Current image
+    'https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
+    // Sustainability focused images
+    'https://images.unsplash.com/photo-1506744038136-46273834b3fb', // Water surrounded by trees
+    'https://images.unsplash.com/photo-1518495973542-4542c06a5843', // Sunlight through trees
+    'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843', // Forest with sunbeam
+    'https://images.unsplash.com/photo-1501854140801-50d01698950b', // Green mountains aerial view
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 10000); // 10 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/inspection-guide.pdf';
@@ -15,17 +37,24 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen text-white">
-      {/* Hero Image with Enhanced Lighting */}
-      <div 
-        className="fixed inset-0 w-full h-full z-0" 
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-          filter: 'contrast(140%) brightness(130%)'
-        }}
-      />
+      {/* Background Image Carousel */}
+      <div className="fixed inset-0 w-full h-full z-0">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
+              currentSlide === index ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              backgroundImage: `url('${image}')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundAttachment: 'fixed',
+              filter: 'contrast(140%) brightness(130%)'
+            }}
+          />
+        ))}
+      </div>
       
       {/* Light Glow Effect */}
       <div 
