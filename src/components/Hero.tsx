@@ -23,7 +23,7 @@ const Hero = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
-          filter: 'contrast(120%) brightness(110%)'
+          filter: 'contrast(140%) brightness(130%)'
         }}
       />
       
@@ -31,14 +31,14 @@ const Hero = () => {
       <div 
         className="fixed inset-0 z-5"
         style={{
-          background: 'radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.6) 100%)',
+          background: 'radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.5) 100%)',
           mixBlendMode: 'overlay'
         }}
       />
       
       {/* Gradient Overlay */}
       <div 
-        className="fixed inset-0 z-10 bg-gradient-to-b from-black/60 via-black/50 to-black/60"
+        className="fixed inset-0 z-10 bg-gradient-to-b from-black/50 via-black/40 to-black/50"
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20 pt-32 pb-16">
