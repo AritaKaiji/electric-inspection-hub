@@ -5,7 +5,6 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDownloadSource = () => {
-    // GitHub APIを使用してリポジトリをZIPとしてダウンロード
     const link = document.createElement('a');
     link.href = 'https://github.com/yourusername/your-repo/archive/refs/heads/main.zip';
     link.download = 'electrical-inspection-program.zip';
@@ -24,6 +23,7 @@ const Header = () => {
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-white hover:text-white/80 transition-colors">サービス</a>
+            <a href="#case-studies" className="text-white hover:text-white/80 transition-colors">導入事例</a>
             <a href="#about" className="text-white hover:text-white/80 transition-colors">会社概要</a>
             <button
               onClick={handleDownloadSource}
@@ -53,6 +53,13 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 サービス
+              </a>
+              <a
+                href="#case-studies"
+                className="block px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md"
+                onClick={() => setIsOpen(false)}
+              >
+                導入事例
               </a>
               <a
                 href="#about"
