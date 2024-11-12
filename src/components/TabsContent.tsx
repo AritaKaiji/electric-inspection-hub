@@ -1,6 +1,30 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
-import { Shield } from "lucide-react";
+import { Shield, Trophy, Users, Building2, LineChart } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+
+const achievementData = [
+  {
+    icon: <Trophy className="w-8 h-8 text-blue-500" />,
+    number: "1,000+",
+    label: "完了プロジェクト",
+  },
+  {
+    icon: <Users className="w-8 h-8 text-blue-500" />,
+    number: "500+",
+    label: "お客様",
+  },
+  {
+    icon: <Building2 className="w-8 h-8 text-blue-500" />,
+    number: "30+",
+    label: "年の実績",
+  },
+  {
+    icon: <LineChart className="w-8 h-8 text-blue-500" />,
+    number: "95%",
+    label: "顧客満足度",
+  },
+];
 
 const CompanyTab = () => (
   <motion.div
@@ -70,27 +94,29 @@ const AchievementsTab = () => (
   <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6"
+    className="p-6"
   >
-    <div>
-      <h2 className="text-2xl font-bold mb-4">実績</h2>
-      <div className="space-y-4">
-        <div className="border-l-4 border-blue-500 pl-4">
-          <h3 className="font-bold">大規模商業施設の電気設備改修</h3>
-          <p className="text-gray-600">営業を継続しながらの改修工事を成功させました</p>
-        </div>
-        <div className="border-l-4 border-blue-500 pl-4">
-          <h3 className="font-bold">工場設備の省エネ化プロジェクト</h3>
-          <p className="text-gray-600">年間電力使用量を30%削減することに成功</p>
-        </div>
+    <div className="max-w-6xl mx-auto">
+      <h2 className="text-2xl font-bold mb-8">実績</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {achievementData.map((achievement, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="flex justify-center mb-4">{achievement.icon}</div>
+                <h3 className="text-3xl font-bold mb-2">{achievement.number}</h3>
+                <p className="text-gray-600">{achievement.label}</p>
+              </CardContent>
+            </Card>
+          </motion.div>
+        ))}
       </div>
-    </div>
-    <div className="relative h-[300px] rounded-lg overflow-hidden">
-      <img
-        src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
-        alt="実績イメージ"
-        className="absolute inset-0 w-full h-full object-cover opacity-95"
-      />
     </div>
   </motion.div>
 );
