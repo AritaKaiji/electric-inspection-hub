@@ -10,6 +10,8 @@ const Hero = () => {
   const images = [
     // Current image
     'https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
+    // Building inspection image
+    'https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a', // Low angle shot of building inspection
     // Sustainability focused image with prominent green
     'https://images.unsplash.com/photo-1518495973542-4542c06a5843', // Sunlight through green trees
   ];
