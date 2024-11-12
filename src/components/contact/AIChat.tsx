@@ -38,39 +38,40 @@ export const AIChat = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" className="mt-4">
-          <Bot className="w-4 h-4 mr-2" />
+        <Button size="lg" className="mt-8 px-8 py-6 text-lg font-bold shadow-lg hover:shadow-xl transform transition hover:-translate-y-1">
+          <Bot className="w-6 h-6 mr-3" />
           AIアシスタントに相談する
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[600px] h-[80vh]">
         <DialogHeader>
-          <DialogTitle>AIアシスタント</DialogTitle>
-          <DialogDescription>
+          <DialogTitle className="text-2xl">AIアシスタント</DialogTitle>
+          <DialogDescription className="text-lg">
             お気軽にご質問ください。AIが即座に回答いたします。
           </DialogDescription>
         </DialogHeader>
-        <div className="h-[300px] overflow-y-auto mb-4 space-y-4">
+        <div className="h-[calc(80vh-200px)] overflow-y-auto mb-4 space-y-4 p-4">
           {aiChat.messages.map((msg, index) => (
             <div
               key={index}
-              className={`p-3 rounded-lg ${
+              className={`p-4 rounded-lg text-lg ${
                 msg.role === 'user'
-                  ? 'bg-primary text-white ml-8'
-                  : 'bg-gray-100 mr-8'
+                  ? 'bg-primary text-white ml-12'
+                  : 'bg-gray-100 mr-12'
               }`}
             >
               {msg.content}
             </div>
           ))}
           {aiChat.isLoading && (
-            <div className="text-center text-gray-500">
+            <div className="text-center text-gray-500 text-lg">
               <span className="animate-pulse">応答中...</span>
             </div>
           )}
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-3">
           <Input
+            className="text-lg p-4"
             placeholder="メッセージを入力..."
             onKeyPress={(e) => {
               if (e.key === 'Enter') {
@@ -80,6 +81,8 @@ export const AIChat = () => {
             }}
           />
           <Button
+            size="lg"
+            className="px-6"
             onClick={(e) => {
               const input = (e.target as HTMLElement)
                 .parentElement?.querySelector('input');
