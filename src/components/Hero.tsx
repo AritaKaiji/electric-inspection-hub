@@ -11,7 +11,9 @@ const Hero = () => {
     // Current image
     'https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
     // Sustainability focused image with prominent green
-    'https://images.unsplash.com/photo-1518495973542-4542c06a5843', // Sunlight through green trees
+    'https://images.unsplash.com/photo-1518495973542-4542c06a5843',
+    // Electrical inspection image
+    'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80'
   ];
 
   useEffect(() => {
@@ -22,7 +24,6 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // ... keep existing code (handleDownload function and rest of the component)
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/inspection-guide.pdf';
