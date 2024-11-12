@@ -12,6 +12,13 @@ export const SustainabilityTab = () => (
         <CardDescription>持続可能な社会の実現に向けて</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
+        <div className="mb-6">
+          <img
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e"
+            alt="サステナビリティ"
+            className="w-full h-48 object-cover rounded-lg mb-4"
+          />
+        </div>
         <div>
           <h3 className="font-semibold mb-2">環境への取り組み</h3>
           <ul className="list-disc list-inside space-y-1">

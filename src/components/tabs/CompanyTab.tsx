@@ -12,6 +12,13 @@ export const CompanyTab = () => (
         <CardDescription>1990年の創業以来、電気設備の安全を守り続けています</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
+        <div className="mb-6">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+            alt="オフィスビル"
+            className="w-full h-48 object-cover rounded-lg mb-4"
+          />
+        </div>
         <div>
           <h3 className="font-semibold mb-2">経営理念</h3>
           <p>安全と信頼を第一に、社会インフラの維持に貢献します。</p>
