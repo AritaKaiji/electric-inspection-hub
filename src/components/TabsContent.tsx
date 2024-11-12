@@ -150,14 +150,63 @@ const SustainabilityTab = () => (
   </motion.div>
 );
 
+const CaseStudiesTab = () => (
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6"
+  >
+    <div>
+      <h2 className="text-2xl font-bold mb-4">導入事例</h2>
+      <div className="space-y-4">
+        <div className="border-l-4 border-blue-500 pl-4">
+          <h3 className="font-bold">大規模商業施設の電気設備改修</h3>
+          <p className="text-gray-600">営業を継続しながらの改修工事を成功させました</p>
+          <p className="text-sm text-gray-500 mt-2">
+            工期：6ヶ月<br />
+            規模：売場面積 50,000㎡<br />
+            特徴：営業時間外の作業で、顧客への影響を最小限に抑制
+          </p>
+        </div>
+        <div className="border-l-4 border-blue-500 pl-4">
+          <h3 className="font-bold">工場設備の省エネ化プロジェクト</h3>
+          <p className="text-gray-600">年間電力使用量を30%削減することに成功</p>
+          <p className="text-sm text-gray-500 mt-2">
+            工期：3ヶ月<br />
+            導入設備：LED照明、省エネ型空調システム<br />
+            成果：電気代年間3,000万円削減
+          </p>
+        </div>
+        <div className="border-l-4 border-blue-500 pl-4">
+          <h3 className="font-bold">データセンターの電気設備診断</h3>
+          <p className="text-gray-600">24時間365日稼働の重要施設の安全性を確保</p>
+          <p className="text-sm text-gray-500 mt-2">
+            期間：定期点検（月1回）<br />
+            対象：高圧受電設備、非常用発電機<br />
+            特徴：稼働を止めない診断技術の活用
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="relative h-[300px] rounded-lg overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+        alt="導入事例イメージ"
+        className="absolute inset-0 w-full h-full object-cover opacity-95"
+      />
+    </div>
+  </motion.div>
+);
+
 const TabsContainer = () => {
   return (
     <Tabs defaultValue="company" className="w-full max-w-5xl mx-auto mt-8">
-      <TabsList className="grid w-full grid-cols-4">
+      <TabsList className="grid w-full grid-cols-5">
         <TabsTrigger value="company">会社情報</TabsTrigger>
         <TabsTrigger value="services">サービス</TabsTrigger>
         <TabsTrigger value="achievements">実績</TabsTrigger>
         <TabsTrigger value="sustainability">サステナビリティ</TabsTrigger>
+        <TabsTrigger value="case-studies">導入事例</TabsTrigger>
       </TabsList>
       <TabsContent value="company">
         <CompanyTab />
@@ -170,6 +219,9 @@ const TabsContainer = () => {
       </TabsContent>
       <TabsContent value="sustainability">
         <SustainabilityTab />
+      </TabsContent>
+      <TabsContent value="case-studies">
+        <CaseStudiesTab />
       </TabsContent>
     </Tabs>
   );
