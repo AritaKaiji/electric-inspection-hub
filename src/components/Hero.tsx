@@ -8,12 +8,12 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const images = [
-    // Current image
+    // メインイメージ
     'https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
-    // Sustainability focused image with prominent green
+    // サステナビリティフォーカスの画像
     'https://images.unsplash.com/photo-1518495973542-4542c06a5843',
-    // Electrical inspection image
-    'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80'
+    // 高層ビルで電気点検をしている日本人男性の画像
+    'https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   ];
 
   useEffect(() => {
