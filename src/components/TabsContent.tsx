@@ -1,7 +1,115 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Users2, Wrench, Trophy, Leaf } from "lucide-react";
+import { Building2, Users2, Wrench, Trophy, Leaf, Factory, Building, GraduationCap, ShoppingBag } from "lucide-react";
+
+const CaseStudiesTab = () => (
+  <div className="space-y-6 p-6">
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Trophy className="h-6 w-6" />
+          導入事例
+        </CardTitle>
+        <CardDescription>実際の導入事例をご紹介します</CardDescription>
+      </CardHeader>
+      <CardContent className="space-y-8">
+        <div className="border rounded-lg p-6 space-y-4">
+          <div className="flex items-center gap-2">
+            <Factory className="h-6 w-6" />
+            <h3 className="text-xl font-semibold">大手製造業A社様</h3>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">課題</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>老朽化した電気設備の安全性への懸念</li>
+              <li>高額な電気料金</li>
+              <li>突発的な設備故障による生産ライン停止</li>
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">導入したソリューション</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>24時間遠隔監視システムの導入</li>
+              <li>計画的な設備更新プログラムの実施</li>
+              <li>省エネ機器への段階的な切り替え</li>
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">成果</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>年間電気料金を25%削減</li>
+              <li>設備故障による生産ライン停止が90%減少</li>
+              <li>CO2排出量を年間30%削減</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border rounded-lg p-6 space-y-4">
+          <div className="flex items-center gap-2">
+            <Building className="h-6 w-6" />
+            <h3 className="text-xl font-semibold">商業施設B社様</h3>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">課題</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>施設内の照明設備の非効率な運用</li>
+              <li>空調システムの制御が不適切</li>
+              <li>電気設備の定期点検による営業時間への影響</li>
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">導入したソリューション</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>スマート照明制御システムの導入</li>
+              <li>AIを活用した空調制御システムの実装</li>
+              <li>営業時間外での効率的な点検スケジュール策定</li>
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">成果</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>照明関連の電力使用量を40%削減</li>
+              <li>空調効率が35%向上</li>
+              <li>年間保守コストを20%削減</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border rounded-lg p-6 space-y-4">
+          <div className="flex items-center gap-2">
+            <GraduationCap className="h-6 w-6" />
+            <h3 className="text-xl font-semibold">教育機関C様</h3>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">課題</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>築50年以上の古い電気設備</li>
+              <li>安全基準への適合性の懸念</li>
+              <li>限られた予算内での設備更新の必要性</li>
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">導入したソリューション</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>段階的な設備更新計画の策定と実施</li>
+              <li>省エネ補助金を活用した最新設備の導入</li>
+              <li>教職員向け省エネ研修プログラムの実施</li>
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <p className="font-semibold">成果</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>電気設備の安全性が大幅に向上</li>
+              <li>年間電気料金を30%削減</li>
+              <li>教職員の省エネ意識が向上</li>
+            </ul>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  </div>
+);
 
 const CompanyTab = () => (
   <div className="space-y-6 p-6">
