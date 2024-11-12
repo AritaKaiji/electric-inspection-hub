@@ -9,7 +9,7 @@ const openai = API_KEY ? new OpenAI({
 
 export const getAIResponse = async (message: string) => {
   if (!openai) {
-    return "申し訳ありません。AIチャットは現在設定されていません。管理者にお問い合わせください。";
+    return "申し訳ありません。AIチャットをご利用いただくには、OpenAI APIキーの設定が必要です。環境変数 VITE_OPENAI_API_KEY を設定してください。";
   }
 
   try {
