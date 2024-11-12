@@ -13,13 +13,19 @@ export const CaseStudiesTab = () => (
         <CardDescription>実際の導入事例をご紹介します</CardDescription>
       </CardHeader>
       <CardContent className="space-y-8">
-        <div className="mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <img
-            src="https://images.unsplash.com/photo-1581092160607-ee37d5c197d4"
-            alt="導入事例"
-            className="w-full h-48 object-cover rounded-lg mb-4"
+            src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+            alt="導入事例 - チーム"
+            className="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1579551441922-b37c9b69ce3f"
+            alt="導入事例 - 技術"
+            className="w-full h-48 object-cover rounded-lg"
           />
         </div>
+        
         <CaseStudy
           icon={Factory}
           title="大手製造業A社様"

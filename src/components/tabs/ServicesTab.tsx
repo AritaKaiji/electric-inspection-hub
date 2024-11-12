@@ -12,11 +12,16 @@ export const ServicesTab = () => (
         <CardDescription>お客様のニーズに合わせた包括的なサービスを提供します</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <img
-            src="https://images.unsplash.com/photo-1581092160607-ee37d5c197d4"
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475"
             alt="電気設備点検"
-            className="w-full h-48 object-cover rounded-lg mb-4"
+            className="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+            alt="電気設備サービス"
+            className="w-full h-48 object-cover rounded-lg"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
