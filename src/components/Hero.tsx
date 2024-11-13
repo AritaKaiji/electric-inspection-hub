@@ -53,7 +53,7 @@ const Hero = () => {
           />
         ))}
       </div>
-      
+
       <div 
         className="fixed inset-0 z-5"
         style={{
@@ -74,10 +74,31 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="absolute top-0 right-4 sm:right-6 lg:right-8"
         >
-          <div className="bg-black/50 backdrop-blur-sm text-white px-6 py-3 rounded-full flex items-center gap-3 shadow-lg animate-pulse text-lg font-bold border border-white/20">
-            <Phone className="w-7 h-7" />
-            <span>24時間緊急対応</span>
-          </div>
+          <a 
+            href="tel:03-1234-5678" 
+            className="bg-black/50 backdrop-blur-sm text-white px-6 py-3 rounded-full flex items-center gap-3 shadow-lg text-lg font-bold border border-white/20 hover:bg-black/60 transition-all group"
+          >
+            <Phone className="w-7 h-7 group-hover:scale-110 transition-transform" />
+            <span className="text-2xl">03-1234-5678</span>
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="fixed bottom-8 right-8 z-50"
+        >
+          <a 
+            href="tel:03-1234-5678"
+            className="bg-red-600 text-white px-6 py-4 rounded-full flex items-center gap-3 shadow-xl hover:bg-red-700 transition-colors group animate-pulse"
+          >
+            <Phone className="w-8 h-8 group-hover:scale-110 transition-transform" />
+            <div className="flex flex-col">
+              <span className="text-sm">24時間対応</span>
+              <span className="text-xl font-bold">03-1234-5678</span>
+            </div>
+          </a>
         </motion.div>
 
         <div className="text-center max-w-4xl mx-auto">
@@ -163,7 +184,6 @@ const Hero = () => {
       </div>
 
       <ProcessDiagram />
-      {/* Light Glow Effect, Gradient Overlay, Content, etc. */}
     </div>
   );
 };
