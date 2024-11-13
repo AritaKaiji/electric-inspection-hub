@@ -76,7 +76,7 @@ const Hero = () => {
         >
           <a 
             href="tel:03-1234-5678" 
-            className="bg-black/50 backdrop-blur-sm text-white px-6 py-3 rounded-full flex items-center gap-3 shadow-lg text-lg font-bold border border-white/20 hover:bg-black/60 transition-all group"
+            className="bg-white/90 backdrop-blur-sm text-gray-800 px-6 py-3 rounded-full flex items-center gap-3 shadow-lg text-lg font-bold border border-gray-200 hover:bg-white transition-all group"
           >
             <Phone className="w-7 h-7 group-hover:scale-110 transition-transform" />
             <span className="text-2xl">03-1234-5678</span>
@@ -91,7 +91,7 @@ const Hero = () => {
         >
           <a 
             href="tel:03-1234-5678"
-            className="bg-red-600 text-white px-6 py-4 rounded-full flex items-center gap-3 shadow-xl hover:bg-red-700 transition-colors group animate-pulse"
+            className="bg-white/90 text-gray-800 px-6 py-4 rounded-full flex items-center gap-3 shadow-xl hover:bg-white transition-colors group animate-pulse"
           >
             <Phone className="w-8 h-8 group-hover:scale-110 transition-transform" />
             <div className="flex flex-col">
