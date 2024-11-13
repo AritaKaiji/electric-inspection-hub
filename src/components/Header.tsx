@@ -5,8 +5,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDownloadSource = () => {
-    // Update the URL to the current repository
-    window.open('https://github.com/gptengineer-app/electrical-inspection-service/archive/refs/heads/main.zip', '_blank');
+    const link = document.createElement('a');
+    link.href = 'https://github.com/yourusername/your-repo/archive/refs/heads/main.zip';
+    link.download = 'electrical-inspection-program.zip';
+    link.click();
   };
 
   const scrollToTabsAndSelectCaseStudies = () => {
