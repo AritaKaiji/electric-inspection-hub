@@ -64,17 +64,18 @@ const About = () => {
             </div>
           </motion.div>
           <motion.div 
-            className="relative h-[400px] rounded-lg overflow-hidden"
+            className="relative h-[500px] rounded-lg overflow-hidden shadow-xl"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-              alt="電気設備の写真"
-              className="absolute inset-0 w-full h-full object-cover opacity-90" // 透過率を90%に設定
+              src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e"
+              alt="都会の夜景"
+              className="absolute inset-0 w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </motion.div>
         </div>
       </div>
