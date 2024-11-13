@@ -1,4 +1,4 @@
-import { Phone, Circuit, MicrochipIcon, Network } from "lucide-react";
+import { Phone, CircuitBoard, Download, Shield, Clock, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 import { toast } from "sonner";
@@ -87,7 +87,7 @@ const Hero = () => {
             <div className="relative flex items-center gap-3">
               <div className="relative">
                 <Phone className="w-8 h-8 text-gray-700 group-hover:scale-110 transition-transform relative z-10" />
-                <Circuit className="w-8 h-8 absolute top-0 left-0 text-blue-400 opacity-50 animate-pulse" />
+                <CircuitBoard className="w-8 h-8 absolute top-0 left-0 text-blue-400 opacity-50 animate-pulse" />
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-medium text-gray-600">24時間対応</span>
