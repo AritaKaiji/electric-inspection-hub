@@ -8,18 +8,15 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const images = [
-    // メインイメージ
     'https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
-    // サステナビリティフォーカスの画像
     'https://images.unsplash.com/photo-1518495973542-4542c06a5843',
-    // 高層ビルで電気点検をしている日本人男性の画像
     'https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
-    }, 10000); // 10 seconds
+    }, 10000);
 
     return () => clearInterval(timer);
   }, []);
@@ -68,20 +65,6 @@ const Hero = () => {
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20 pt-32 pb-16">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="absolute top-0 right-4 sm:right-6 lg:right-8"
-        >
-          <a 
-            href="tel:03-1234-5678" 
-            className="bg-white/90 backdrop-blur-sm text-gray-800 px-6 py-3 rounded-full flex items-center gap-3 shadow-lg text-lg font-bold border border-gray-200 hover:bg-white transition-all group"
-          >
-            <Phone className="w-7 h-7 group-hover:scale-110 transition-transform" />
-            <span className="text-2xl">03-1234-5678</span>
-          </a>
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
