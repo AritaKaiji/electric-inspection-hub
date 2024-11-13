@@ -1,4 +1,4 @@
-import { Shield, Zap, Clock, CheckCircle2, Phone, Download } from "lucide-react";
+import { Phone, Circuit, MicrochipIcon, Network } from "lucide-react";
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 import { toast } from "sonner";
@@ -74,12 +74,25 @@ const Hero = () => {
         >
           <a 
             href="tel:03-1234-5678"
-            className="bg-white/90 text-gray-800 px-6 py-4 rounded-full flex items-center gap-3 shadow-xl hover:bg-white transition-colors group animate-pulse"
+            className="relative overflow-hidden bg-white/90 backdrop-blur-sm text-gray-800 px-6 py-4 rounded-2xl flex items-center gap-3 shadow-2xl hover:bg-white transition-all group border border-white/50"
+            style={{
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95))',
+              boxShadow: '0 8px 32px rgba(31, 38, 135, 0.15)',
+            }}
           >
-            <Phone className="w-8 h-8 group-hover:scale-110 transition-transform" />
-            <div className="flex flex-col">
-              <span className="text-sm">24時間対応</span>
-              <span className="text-xl font-bold">03-1234-5678</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-purple-50 opacity-50" />
+            <div className="absolute -top-10 -left-10 w-20 h-20 bg-blue-100 rounded-full filter blur-xl opacity-70 animate-pulse" />
+            <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-purple-100 rounded-full filter blur-xl opacity-70 animate-pulse" />
+            
+            <div className="relative flex items-center gap-3">
+              <div className="relative">
+                <Phone className="w-8 h-8 text-gray-700 group-hover:scale-110 transition-transform relative z-10" />
+                <Circuit className="w-8 h-8 absolute top-0 left-0 text-blue-400 opacity-50 animate-pulse" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-sm font-medium text-gray-600">24時間対応</span>
+                <span className="text-xl font-bold text-gray-800 tracking-wide">03-1234-5678</span>
+              </div>
             </div>
           </a>
         </motion.div>
