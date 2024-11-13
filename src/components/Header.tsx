@@ -43,7 +43,7 @@ const Header = () => {
             <a href="#about" className="text-white hover:text-white/80 transition-colors">会社概要</a>
             <button
               onClick={handleDownloadSource}
-              className="flex items-center gap-2 text-white hover:text-white/80 transition-colors"
+              className="flex items-center gap-2 text-white hover:text-white/80 transition-colors cursor-pointer"
             >
               <Download className="w-4 h-4" />
               ソースコード
@@ -91,7 +91,7 @@ const Header = () => {
                   handleDownloadSource();
                   setIsOpen(false);
                 }}
-                className="flex items-center gap-2 w-full px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md"
+                className="flex items-center gap-2 w-full px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md cursor-pointer"
               >
                 <Download className="w-4 h-4" />
                 ソースコード
