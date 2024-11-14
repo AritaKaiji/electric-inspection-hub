@@ -54,7 +54,7 @@ const Hero = () => {
         className="fixed inset-0 z-10 bg-gradient-to-b from-black/50 via-black/40 to-black/50"
       />
 
-      <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20 pt-24 pb-16"> {/* Adjusted pt-32 to pt-24 for 1.5cm spacing */}
+      <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20 pt-[160px] pb-16"> {/* Adjusted pt-24 to pt-[160px] for 4cm spacing */}
         <div className="text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
