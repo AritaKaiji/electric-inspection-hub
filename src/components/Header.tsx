@@ -1,15 +1,8 @@
 import { useState } from "react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleDownloadSource = () => {
-    const link = document.createElement('a');
-    link.href = 'https://github.com/yourusername/your-repo/archive/refs/heads/main.zip';
-    link.download = 'electrical-inspection-program.zip';
-    link.click();
-  };
 
   const scrollToTabsAndSelectCaseStudies = () => {
     const tabsElement = document.querySelector('[role="tablist"]');
@@ -41,13 +34,6 @@ const Header = () => {
               導入事例
             </button>
             <a href="#about" className="text-white hover:text-white/80 transition-colors">会社概要</a>
-            <button
-              onClick={handleDownloadSource}
-              className="flex items-center gap-2 text-white hover:text-white/80 transition-colors"
-            >
-              <Download className="w-4 h-4" />
-              ソースコード
-            </button>
             <a href="#contact" className="bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-md hover:bg-white/20 transition-colors">
               お問い合わせ
             </a>
@@ -86,16 +72,6 @@ const Header = () => {
               >
                 会社概要
               </a>
-              <button
-                onClick={() => {
-                  handleDownloadSource();
-                  setIsOpen(false);
-                }}
-                className="flex items-center gap-2 w-full px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md"
-              >
-                <Download className="w-4 h-4" />
-                ソースコード
-              </button>
               <a
                 href="#contact"
                 className="block px-3 py-2 text-white hover:bg-white/10 transition-colors rounded-md"
