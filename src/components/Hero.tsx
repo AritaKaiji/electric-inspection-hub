@@ -1,4 +1,4 @@
-import { Phone, CircuitBoard } from "lucide-react";
+import { Phone, CircuitBoard, Shield, Clock, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 import { toast } from "sonner";
