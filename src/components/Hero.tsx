@@ -1,4 +1,4 @@
-import { Phone, Shield, Clock, Zap } from "lucide-react";
+import { Phone, CircuitBoard, Shield, Clock, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 import { useState, useEffect } from "react";
@@ -79,7 +79,7 @@ const Hero = () => {
         <div className="h-[120px]"></div>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-24"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -103,15 +103,6 @@ const Hero = () => {
             <h3 className="text-xl font-bold mb-2 text-white">迅速な対応</h3>
             <p className="text-white/80">
               お客様のご要望に素早く対応いたします
-            </p>
-          </div>
-          <div className="bg-black/30 backdrop-blur-sm p-8 rounded-xl border border-white/20 hover:border-white/30 transition-colors group">
-            <Phone className="w-12 h-12 mb-4 text-white group-hover:scale-110 transition-transform" />
-            <h3 className="text-xl font-bold mb-2 text-white">電話でのご相談</h3>
-            <p className="text-white/80">
-              03-1234-5678
-              <br />
-              平日 9:00-18:00
             </p>
           </div>
         </motion.div>
