@@ -1,4 +1,4 @@
-import { Phone, CircuitBoard, Download, Shield, Clock, Zap } from "lucide-react";
+import { Phone, CircuitBoard } from "lucide-react";
 import { motion } from "framer-motion";
 import ProcessDiagram from "./ProcessDiagram";
 import { toast } from "sonner";
@@ -20,15 +20,6 @@ const Hero = () => {
 
     return () => clearInterval(timer);
   }, []);
-
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/inspection-guide.pdf';
-    link.download = '電気設備点検ガイド.pdf';
-    link.click();
-    
-    toast.success("ダウンロードを開始しました");
-  };
 
   return (
     <div className="relative min-h-screen text-white">
@@ -114,38 +105,6 @@ const Hero = () => {
               <br className="hidden sm:block" />
               安心と信頼をお届けします
             </p>
-          </motion.div>
-
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-block bg-white/10 backdrop-blur-sm text-white px-16 py-5 text-2xl font-bold rounded-full 
-                       hover:bg-white/20 transition-colors shadow-xl
-                       transform hover:-translate-y-1 active:translate-y-0 
-                       focus:outline-none focus:ring-4 focus:ring-white/30 border border-white/20"
-            >
-              無料相談はこちら
-            </motion.a>
-
-            <motion.button
-              onClick={handleDownload}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 bg-black/30 backdrop-blur-sm text-white px-8 py-5 text-xl font-bold rounded-full 
-                       hover:bg-black/40 transition-colors shadow-xl border border-white/20
-                       transform hover:-translate-y-1 active:translate-y-0 
-                       focus:outline-none focus:ring-4 focus:ring-white/30"
-            >
-              <Download className="w-6 h-6" />
-              資料ダウンロード
-            </motion.button>
           </motion.div>
         </div>
 
