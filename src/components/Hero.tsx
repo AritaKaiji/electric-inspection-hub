@@ -118,9 +118,7 @@ const Hero = () => {
             href="tel:03-1234-5678"
             className="flex items-center gap-3 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white/50 hover:bg-white/95 transition-all shadow-lg hover:shadow-xl group"
           >
-            <div className="bg-gradient-to-br from-blue-500 to-purple-500 p-2 rounded-xl">
-              <Phone className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
-            </div>
+            <Phone className="w-6 h-6 text-gray-800 group-hover:scale-110 transition-transform" />
             <div className="text-left">
               <p className="text-gray-800 font-bold tracking-wide">03-1234-5678</p>
             </div>
