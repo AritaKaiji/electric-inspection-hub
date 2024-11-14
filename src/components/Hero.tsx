@@ -106,28 +106,29 @@ const Hero = () => {
             </p>
           </div>
         </motion.div>
-      </div>
 
-      {/* Floating Phone Button */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="fixed bottom-8 right-8 z-50"
-      >
-        <a
-          href="tel:03-1234-5678"
-          className="flex items-center gap-2 bg-black/30 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:border-white/30 transition-colors group"
+        {/* Floating Phone Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="fixed bottom-8 right-8 z-50"
         >
-          <Phone className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
-          <div className="text-left">
-            <p className="text-white font-bold">03-1234-5678</p>
-            <p className="text-white/80 text-sm">平日 9:00-18:00</p>
-          </div>
-        </a>
-      </motion.div>
+          <a
+            href="tel:03-1234-5678"
+            className="flex items-center gap-3 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white/50 hover:bg-white/95 transition-all shadow-lg hover:shadow-xl group"
+          >
+            <div className="bg-gradient-to-br from-blue-500 to-purple-500 p-2 rounded-xl">
+              <Phone className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+            </div>
+            <div className="text-left">
+              <p className="text-gray-800 font-bold tracking-wide">03-1234-5678</p>
+            </div>
+          </a>
+        </motion.div>
 
-      <ProcessDiagram />
+        <ProcessDiagram />
+      </div>
     </div>
   );
 };
