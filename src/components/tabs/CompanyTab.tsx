@@ -1,5 +1,6 @@
 import { Building2, Building, GraduationCap, Factory, Store, Landmark } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 export const CompanyTab = () => (
   <div className="space-y-6 p-6">
@@ -22,6 +23,50 @@ export const CompanyTab = () => (
         <div>
           <h3 className="font-semibold mb-2">経営理念</h3>
           <p>安全と信頼を第一に、社会インフラの維持に貢献します。</p>
+        </div>
+        <div className="space-y-4">
+          <motion.div 
+            className="border-b pb-2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="font-semibold text-gray-900">社名</h3>
+            <p className="text-gray-600">電気点検株式会社</p>
+          </motion.div>
+          <motion.div 
+            className="border-b pb-2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="font-semibold text-gray-900">所在地</h3>
+            <p className="text-gray-600">〒100-0001 東京都千代田区1-1-1</p>
+          </motion.div>
+          <motion.div 
+            className="border-b pb-2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="font-semibold text-gray-900">設立</h3>
+            <p className="text-gray-600">1990年4月1日</p>
+          </motion.div>
+          <motion.div 
+            className="border-b pb-2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="font-semibold text-gray-900">資格</h3>
+            <p className="text-gray-600">
+              電気主任技術者、電気工事士、その他関連資格多数
+            </p>
+          </motion.div>
         </div>
         <div>
           <h3 className="font-semibold mb-2">事業内容</h3>
