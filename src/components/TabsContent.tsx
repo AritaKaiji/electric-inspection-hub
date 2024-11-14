@@ -12,17 +12,15 @@ const TabsContainer = () => {
           <TabsTrigger value="services">サービス</TabsTrigger>
           <TabsTrigger value="achievements">実績</TabsTrigger>
         </TabsList>
-        <div className="mt-[100px]">
-          <TabsContent value="company">
-            <CompanyTab />
-          </TabsContent>
-          <TabsContent value="services">
-            <ServicesTab />
-          </TabsContent>
-          <TabsContent value="achievements">
-            <AchievementsTab />
-          </TabsContent>
-        </div>
+        <TabsContent value="company">
+          <CompanyTab />
+        </TabsContent>
+        <TabsContent value="services">
+          <ServicesTab />
+        </TabsContent>
+        <TabsContent value="achievements">
+          <AchievementsTab />
+        </TabsContent>
       </Tabs>
     </div>
   );
