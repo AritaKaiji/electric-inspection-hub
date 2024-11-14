@@ -63,7 +63,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <h1 className="flex flex-col items-center text-5xl sm:text-7xl font-bold mb-6 leading-tight text-white">
+            <h1 className="inline-flex flex-col writing-vertical-rl text-4xl sm:text-6xl font-bold mb-6 leading-tight text-white mx-auto">
               <span className="mb-2">笑顔が見える</span>
               <span className="mb-2">現場づくり</span>
               <span>安全第一。</span>
