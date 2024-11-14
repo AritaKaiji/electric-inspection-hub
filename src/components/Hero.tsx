@@ -55,7 +55,7 @@ const Hero = () => {
       />
 
       <div className="container-width px-4 sm:px-6 lg:px-8 relative z-20 pt-[160px] pb-16">
-        <div className="text-center max-w-4xl mx-auto border border-white/20 rounded-lg p-8"> {/* Added border and padding */}
+        <div className="text-center max-w-4xl mx-auto border border-white/20 rounded-lg p-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
