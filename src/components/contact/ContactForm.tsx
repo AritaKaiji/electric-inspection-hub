@@ -1,6 +1,5 @@
 import { ContactInfo } from "./ContactInfo";
 import { ContactFormFields } from "./ContactFormFields";
-import { AIAssistantDialog } from "./AIAssistantDialog";
 
 const ContactForm = () => {
   return (
@@ -13,7 +12,6 @@ const ContactForm = () => {
           <p className="text-gray-600 max-w-2xl mx-auto">
             ご質問やご相談がございましたら、お気軽にお問い合わせください
           </p>
-          <AIAssistantDialog />
         </div>
 
         {/* Hero Image */}
