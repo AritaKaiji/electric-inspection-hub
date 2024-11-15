@@ -10,7 +10,8 @@ const Header = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <a href="#" className="text-2xl font-bold text-white">
-              株式会社照英エンジニアサービス
+              昭英エンジニアサービス
+          
             </a>
           </div>
           
