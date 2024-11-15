@@ -4,7 +4,6 @@ import Services from "../components/Services";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import TabsContainer from "../components/TabsContent";
-import BrochureDownload from "../components/BrochureDownload";
 
 const Index = () => {
   return (
@@ -14,7 +13,6 @@ const Index = () => {
       <div className="bg-white relative z-10">
         <TabsContainer />
         <Services />
-        <BrochureDownload />
         <ContactForm />
         <Footer />
       </div>
