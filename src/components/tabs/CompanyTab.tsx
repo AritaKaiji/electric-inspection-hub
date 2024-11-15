@@ -33,7 +33,7 @@ export const CompanyTab = () => (
             viewport={{ once: true }}
           >
             <h3 className="font-semibold text-gray-900">社名</h3>
-            <p className="text-gray-600">株式会社昭英エンジニアサービス</p>
+            <p className="text-gray-600">株式会社昭栄エンジニアサービス</p>
           </motion.div>
           <motion.div 
             className="border-b pb-2"
