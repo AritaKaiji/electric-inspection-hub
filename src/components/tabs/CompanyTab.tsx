@@ -8,7 +8,7 @@ export const CompanyTab = () => (
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Building2 className="h-6 w-6" />
-          会社情報
+          
         </CardTitle>
         <CardDescription>1990年の創業以来、電気設備の安全を守り続けています</CardDescription>
       </CardHeader>
@@ -21,7 +21,7 @@ export const CompanyTab = () => (
           />
         </div>
         <div>
-          <h3 className="font-semibold mb-2">経営理念</h3>
+          <h3 className="font-semibold mb-2"></h3>
           <p>安全と信頼を第一に、社会インフラの維持に貢献します。</p>
         </div>
         <div className="space-y-4">
@@ -32,8 +32,10 @@ export const CompanyTab = () => (
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-semibold text-gray-900">社名</h3>
-            <p className="text-gray-600">株式会社昭栄エンジニアサービス</p>
+            <h3 className="font-semibold text-gray-900">社名<株式会社昭栄電気産業>
+
+/h3>
+            <p className="text-gray-600"</p>
           </motion.div>
           <motion.div 
             className="border-b pb-2"
@@ -43,7 +45,7 @@ export const CompanyTab = () => (
             viewport={{ once: true }}
           >
             <h3 className="font-semibold text-gray-900">所在地</h3>
-            <p className="text-gray-600">〒100-0001 東京都千代田区1-1-1</p>
+            <p className="text-gray-600">東京都葛飾区鎌倉3-58-2</p>
           </motion.div>
           <motion.div 
             className="border-b pb-2"
@@ -52,8 +54,14 @@ export const CompanyTab = () => (
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-semibold text-gray-900">設立</h3>
-            <p className="text-gray-600">1990年4月1日</p>
+            <h3 className="font-semibold text-gray-900">グループ会社</h3>
+            <p className="text-gray-600">株式会社昭栄ホールディングス
+
+株式会社昭栄エンジニアサービス
+
+株式会社ＭＴサービス
+
+株式会社Ｓアドバンス</p>
           </motion.div>
           <motion.div 
             className="border-b pb-2"
@@ -62,19 +70,34 @@ export const CompanyTab = () => (
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-semibold text-gray-900">資格</h3>
+            <h3 className="font-semibold text-gray-900">資格取得者</h3>
             <p className="text-gray-600">
-              電気主任技術者、電気工事士、その他関連資格多数
+            第一級電気施工管理技士：1名
+
+第三種電気主任技術者：2名
+
+第一種電気工事士：10名
+
+第二種電気工事士：223名
+一般建設業 東京都知事許可（般-17）第89280号
+
+特定労働者派遣事業 厚生労働大臣届出 特13-12-0057号
+
+電気通信工事業 東京都知事許可（般-9）第89280号
+
+電気工事業 東京都知事届出第　045060号
+
+日本建設業施工管理技師会　第20046号
             </p>
           </motion.div>
         </div>
         <div>
           <h3 className="font-semibold mb-2">事業内容</h3>
           <ul className="list-disc list-inside space-y-1">
-            <li>電気設備点検・保守</li>
-            <li>安全診断・コンサルティング</li>
-            <li>設備更新工事</li>
-            <li>24時間緊急対応サービス</li>
+            <li>電柱設計、定期調査、竣工調査、ガス調査、フィールド作業、外線・内線電気工事、EV充電器施工、太陽光・蓄電池施工、ものづくり開発、警備設備工事、派遣業</li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
         </div>
       </CardContent>
@@ -84,7 +107,19 @@ export const CompanyTab = () => (
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-blue-900">主要取引先</CardTitle>
         <CardDescription className="text-blue-800">
-          多様な業界での豊富な実績があります
+        東京電力パワーグリッド株式会社
+
+テプコ・ソリューション・アドバンス株式会社
+
+セコム株式会社
+
+東電タウンプランニング株式会社
+
+東京エナジーアライアンス株式会社
+
+テプコホームテック株式会社
+
+
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6">

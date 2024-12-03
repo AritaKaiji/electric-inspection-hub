@@ -40,14 +40,14 @@ const ContactForm = () => {
                   <Phone className="w-6 h-6 text-primary mr-3" />
                   <div>
                     <p className="font-semibold">電話番号</p>
-                    <p className="text-gray-600">03-1234-5678</p>
+                    <p className="text-gray-600">お問い合わせフォームから</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="w-6 h-6 text-primary mr-3" />
                   <div>
                     <p className="font-semibold">メールアドレス</p>
-                    <p className="text-gray-600">info@example.com</p>
+                    <p className="text-gray-600">お問合せフォームから</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -57,7 +57,7 @@ const ContactForm = () => {
                     <p className="text-gray-600">
                       〒100-0001
                       <br />
-                      東京都千代田区1-1-1
+                      東京都葛飾区鎌倉3-58-2
                     </p>
                   </div>
                 </div>
