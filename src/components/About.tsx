@@ -97,6 +97,52 @@ const About = () => {
                   <li>テプコ・ソリューション・アドバンス株式会社</li>
                   <li>セコム株式会社</li>
                   <li>東電タウンプランニング株式会社</li>
+                  <li>東京エナジーアライアンス株式会社</li>
+                  <li>テプコホームテック株式会社</li>
+                </ul>
+              </motion.div>
+              <motion.div 
+                className="border-b pb-2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="font-semibold text-gray-900">事業内容</h3>
+                <p className="text-gray-600">
+                  電柱設計、定期調査、竣工調査、ガス調査、フィールド作業、外線・内線電気工事、
+                  EV充電器施工、太陽光・蓄電池施工、ものづくり開発、警備設備工事、派遣業
+                </p>
+              </motion.div>
+              <motion.div 
+                className="border-b pb-2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.9 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="font-semibold text-gray-900">主な資格取得者</h3>
+                <ul className="text-gray-600 list-disc list-inside">
+                  <li>第一級電気施工管理技士：1名</li>
+                  <li>第三種電気主任技術者：2名</li>
+                  <li>第一種電気工事士：10名</li>
+                  <li>第二種電気工事士：223名</li>
+                </ul>
+              </motion.div>
+              <motion.div 
+                className="border-b pb-2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.0 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="font-semibold text-gray-900">取得免許</h3>
+                <ul className="text-gray-600 list-disc list-inside">
+                  <li>一般建設業 東京都知事許可（般-17）第89280号</li>
+                  <li>特定労働者派遣事業 厚生労働大臣届出 特13-12-0057号</li>
+                  <li>電気通信工事業 東京都知事許可（般-9）第89280号</li>
+                  <li>電気工事業 東京都知事届出第 045060号</li>
+                  <li>日本建設業施工管理技師会 第20046号</li>
                 </ul>
               </motion.div>
             </div>
