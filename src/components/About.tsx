@@ -37,7 +37,7 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 <h3 className="font-semibold text-gray-900">所在地</h3>
-                <p className="text-gray-600">〒125-0053 東京都葛飾区鎌倉3-58-2</p>
+                <p className="text-gray-600">東京都葛飾区鎌倉3-58-2</p>
               </motion.div>
               <motion.div 
                 className="border-b pb-2"
