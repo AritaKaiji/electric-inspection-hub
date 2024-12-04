@@ -1,4 +1,4 @@
-import { CheckCircle2, AlertCircle, FileText, Shield, Flame, Wrench, ClipboardCheck } from "lucide-react";
+import { CheckCircle2, Shield, Flame, Wrench, ClipboardCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ServiceCard = ({ icon: Icon, title, description, items, bgImage }) => {
@@ -94,30 +94,6 @@ const Services = () => {
         "絶縁抵抗測定の実施",
         "電圧測定の実施",
         "接地抵抗測定の実施"
-      ],
-      bgImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
-    },
-    {
-      icon: AlertCircle,
-      title: "24時間緊急対応",
-      description: "突発的な電気トラブルに、迅速かつ安全に対応いたします",
-      items: [
-        "停電時の緊急復旧対応",
-        "漏電による事故防止対策",
-        "設備故障の緊急修理",
-        "安全な仮復旧措置"
-      ],
-      bgImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
-    },
-    {
-      icon: FileText,
-      title: "安全診断報告",
-      description: "詳細な報告書の作成と、事故防止のための改善提案を提供します",
-      items: [
-        "法定点検報告書作成",
-        "設備の安全性評価",
-        "事故防止のための改善提案",
-        "設備更新計画の策定"
       ],
       bgImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
     }
