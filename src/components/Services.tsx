@@ -1,4 +1,4 @@
-import { CheckCircle2, AlertCircle, FileText, Shield, Flame, Wrench } from "lucide-react";
+import { CheckCircle2, AlertCircle, FileText, Shield, Flame, Wrench, ClipboardCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ServiceCard = ({ icon: Icon, title, description, items, bgImage }) => {
@@ -72,6 +72,18 @@ const Services = () => {
         "事前の現場確認実施"
       ],
       bgImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789"
+    },
+    {
+      icon: ClipboardCheck,
+      title: "竣工調査",
+      description: "電気事業法に基づく法定点検で、新築時や電気設備の変更時に実施します",
+      items: [
+        "配線・電気設備の目視点検",
+        "絶縁抵抗測定の実施",
+        "電圧測定の実施",
+        "接地抵抗測定の実施"
+      ],
+      bgImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
     },
     {
       icon: AlertCircle,
