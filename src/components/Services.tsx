@@ -50,6 +50,18 @@ const Services = () => {
       bgImage: "https://images.unsplash.com/photo-1518770660439-4636190af475"
     },
     {
+      icon: Wrench,
+      title: "計器工事",
+      description: "お客様の引越しや契約変更に伴う電気設備の接続・切断作業を行います",
+      items: [
+        "電気の使用開始・停止時の接続作業",
+        "電力量計・契約ブレーカーの交換",
+        "電線の接続・切断作業",
+        "事前の現場確認実施"
+      ],
+      bgImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789"
+    },
+    {
       icon: Flame,
       title: "ガス調査サービス",
       description: "お客様の安全を確保するため、専門的な視点でガス設備の点検を実施します",
