@@ -109,13 +109,8 @@ export const CompanyTab = () => {
             </ul>
           </CardDescription>
         </CardHeader>
-        <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="space-y-4">
-            <div className="flex items-start gap-3">
-              <Landmark className="h-6 w-6 text-blue-700 mt-1" />
-              <div>
-                <h4 className="font-semibold text-lg text-blue-900"></h4>
-                <p className="text-sm text-gray-600">
+        
+        
                 
               
                   大手自動車メーカー、電機メーカーの工場設備の定期点検と保守
