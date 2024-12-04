@@ -39,7 +39,7 @@ const Services = () => {
   const services = [
     {
       icon: Shield,
-      title: "安全点検サービス",
+      title: "定期調査",
       description: "法令に基づいた定期的な電気設備の点検で、事故を未然に防ぎます",
       items: [
         "絶縁抵抗測定による漏電防止",
