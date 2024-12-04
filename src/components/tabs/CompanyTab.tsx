@@ -1,4 +1,4 @@
-import { Building2, Building, GraduationCap, Factory, Store, Landmark } from "lucide-react";
+import { Building2 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
@@ -109,10 +109,7 @@ export const CompanyTab = () => {
             </ul>
           </CardDescription>
         </CardHeader>
-        
-
-                
-              
-                           </div>
-      
+      </Card>
+    </div>
+  );
 };
