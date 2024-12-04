@@ -117,14 +117,7 @@ export const CompanyTab = () => {
                 <h4 className="font-semibold text-lg text-blue-900"></h4>
                 <p className="text-sm text-gray-600">
                 
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <Factory className="h-6 w-6 text-blue-700 mt-1" />
-              <div>
-                <h4 className="font-semibold text-lg text-blue-900">製造業</h4>
-                <p className="text-sm text-gray-600">
+              
                   大手自動車メーカー、電機メーカーの工場設備の定期点検と保守
                 </p>
               </div>
@@ -137,18 +130,7 @@ export const CompanyTab = () => {
                 <h4 className="font-semibold text-lg text-blue-900"></h4>
                 <p className="text-sm text-gray-600">
                   
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <GraduationCap className="h-6 w-6 text-blue-700 mt-1" />
-              <div>
-                <h4 className="font-semibold text-lg text-blue-900"></h4>
-                <p className="text-sm text-gray-600">
-                  
-                </p>
-              </div>
-            </div>
+                
           </div>
         </CardContent>
       </Card>
