@@ -1,4 +1,4 @@
-import { CheckCircle2, AlertCircle, FileText, Shield } from "lucide-react";
+import { CheckCircle2, AlertCircle, FileText, Shield, Flame } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ServiceCard = ({ icon: Icon, title, description, items, bgImage }) => {
@@ -50,6 +50,18 @@ const Services = () => {
       bgImage: "https://images.unsplash.com/photo-1518770660439-4636190af475"
     },
     {
+      icon: Flame,
+      title: "ガス調査サービス",
+      description: "お客様の安全を確保するため、専門的な視点でガス設備の点検を実施します",
+      items: [
+        "ガス漏れ調査の実施",
+        "ガス機器の点火試験",
+        "設置状況と使用環境の確認",
+        "安全装置付き機器への交換提案"
+      ],
+      bgImage: "https://images.unsplash.com/photo-1582034986517-30d163aa1da9"
+    },
+    {
       icon: AlertCircle,
       title: "24時間緊急対応",
       description: "突発的な電気トラブルに、迅速かつ安全に対応いたします",
@@ -94,7 +106,7 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
