@@ -114,8 +114,5 @@ export const CompanyTab = () => {
                 
               
                            </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
+      
 };
