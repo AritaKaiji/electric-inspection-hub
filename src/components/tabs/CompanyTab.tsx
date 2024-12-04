@@ -114,9 +114,9 @@ export const CompanyTab = () => {
             <div className="flex items-start gap-3">
               <Landmark className="h-6 w-6 text-blue-700 mt-1" />
               <div>
-                <h4 className="font-semibold text-lg text-blue-900">官公庁</h4>
+                <h4 className="font-semibold text-lg text-blue-900"></h4>
                 <p className="text-sm text-gray-600">
-                  都庁、区役所、市役所など行政施設の電気設備保守管理を担当
+                
                 </p>
               </div>
             </div>
@@ -134,18 +134,18 @@ export const CompanyTab = () => {
             <div className="flex items-start gap-3">
               <Store className="h-6 w-6 text-blue-700 mt-1" />
               <div>
-                <h4 className="font-semibold text-lg text-blue-900">商業施設</h4>
+                <h4 className="font-semibold text-lg text-blue-900"></h4>
                 <p className="text-sm text-gray-600">
-                  大型ショッピングモール、百貨店の電気設備総合管理を実施
+                  
                 </p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <GraduationCap className="h-6 w-6 text-blue-700 mt-1" />
               <div>
-                <h4 className="font-semibold text-lg text-blue-900">教育機関</h4>
+                <h4 className="font-semibold text-lg text-blue-900"></h4>
                 <p className="text-sm text-gray-600">
-                  大学、高校、専門学校の電気設備の安全管理と改修工事
+                  
                 </p>
               </div>
             </div>
