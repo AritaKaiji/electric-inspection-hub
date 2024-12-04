@@ -55,7 +55,7 @@ const ContactForm = () => {
                   <div>
                     <p className="font-semibold">所在地</p>
                     <p className="text-gray-600">
-                      〒100-0001
+                
                       <br />
                       東京都葛飾区鎌倉3-58-2
                     </p>

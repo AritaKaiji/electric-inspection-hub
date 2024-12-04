@@ -33,10 +33,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">お問い合わせ</h3>
             <p className="text-gray-400">
-              〒100-0001<br />
-              東京都千代田区1-1-1<br />
-              TEL: 03-1234-5678<br />
-              Email: info@example.com
+              <br />
+              東京都葛飾区鎌倉3-58-2<br />
+              TEL: 03－3671－1666<br />
+          
             </p>
           </div>
         </div>
